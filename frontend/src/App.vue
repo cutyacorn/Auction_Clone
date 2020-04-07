@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <header id="app">
     <div class="main_title">
       <div class="title_menu">
         <ul>
@@ -9,14 +9,13 @@
       </div>
       <div class ="title_auction">
         <div class="title_item">
-          <router-link to="/"><img class="img_size" src="https://pics.auction.co.kr/pc/renewal/common/header/logo_@2x.png" alt="AUCTION"></router-link>
+          <router-link to="/"><img alt="auction_logo" class="img_size" src="./assets/auction_logo.png"></router-link>
         </div>
         <div class="search_inner">
           <input type="submit" value="검색" class="search_btn_ok">
         </div>
       </div>
     </div>
-
     <div class="gnb_bar">
       <nav class="gnb">
         <ul class="gnb_list">
@@ -32,9 +31,8 @@
         </ul>
       </nav>
     </div>
-    <join/>
     <router-view/>
-  </div>
+  </header>
 </template>
 
 <style>
