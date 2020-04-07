@@ -1,50 +1,57 @@
 <template>
-  <header id="app">
-    <div class="main_title">
-      <div class="title_menu">
-        <ul>
-          <li><router-link to="/login">로그인</router-link></li>
-          <li><router-link to="/join">회원가입</router-link></li>
-        </ul>
-      </div>
-      <div class ="title_auction">
-        <div class="title_item">
-          <router-link to="/"><img alt="auction_logo" class="img_size" src="./assets/auction_logo.png"></router-link>
+  <div id="app">
+    <header>
+      <div class="main_title">
+        <div class="title_menu">
+          <ul>
+            <li><router-link to="/login">로그인</router-link></li>
+            <li><router-link to="/join">회원가입</router-link></li>
+          </ul>
         </div>
-        <div class="search_inner">
-          <input type="submit" value="검색" class="search_btn_ok">
+        <div class ="title_auction">
+          <div class="title_item">
+            <router-link to="/"><img alt="auction_logo" class="img_size" src="./assets/auction_logo.png"></router-link>
+          </div>
+          <div class="search_inner">
+            <input type="submit" value="검색" class="search_btn_ok">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="gnb_bar">
-      <nav class="gnb">
-        <ul class="gnb_list">
-          <li><a href=""><strong>☰</strong> 전체 카테고리</a></li>
-          <li> | </li>
-          <li><a href="">쿠폰포인트</a></li>
-          <li> | </li>
-          <li><a href="">옥션베스트</a></li>
-          <li> | </li>
-          <li><a href="">스마일배송</a></li>
-          <li> | </li>
-          <li><a href="">스마일클럽</a></li>
-        </ul>
-      </nav>
-    </div>
-    <router-view/>
-  </header>
+      <div class="gnb_bar">
+        <nav class="gnb">
+          <ul class="gnb_list">
+            <li><a href=""><strong>☰</strong> 전체 카테고리</a></li>
+            <li> | </li>
+            <li><a href="">쿠폰포인트</a></li>
+            <li> | </li>
+            <li><a href="">옥션베스트</a></li>
+            <li> | </li>
+            <li><a href="">스마일배송</a></li>
+            <li> | </li>
+            <li><a href="">스마일클럽</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <router-view/>
+    </main>
+  </div>
 </template>
 
 <style>
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color:gray
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-a{
-  text-decoration: none;
-  color:gray
 }
 .main_title{
   min-width: 1000px;
