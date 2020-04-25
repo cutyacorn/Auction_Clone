@@ -7,6 +7,11 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var flash = require('connect-flash');
+var passport = require('passport');
+require('dotenv').config();
+
+
 var app = express();
 
 // view engine setup
